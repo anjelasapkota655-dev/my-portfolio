@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito',sans-serif;
+}
+:root{
+    --bg-color:  #191f36;
+    --snd-bf-color:  #262B40;
+    --text-color-: #fff;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color-);
+}
+
+section {
+         min-height: 100vh;
+         padding: 10rem 9% 2 rem;
+}
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2 rem 9%;
+    background:var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.navbar a.active {
+    color: var(--primary-color);
+}
+
+/* Home Section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.home-content h3 span {
+    color: var(--primary-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.social-media a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-right: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--primary-color);
+}
+
+/* About Section */
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
