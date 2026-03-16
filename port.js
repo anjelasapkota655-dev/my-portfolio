@@ -14,10 +14,20 @@ if (mobileMenu && navLinks) {
 }
 
 // Form submission
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-e.preventDefault();
-alert("Thank you! Your message has been sent.");
-this.reset();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+  const form = document.getElementById("contact-form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been received.");
+      form.reset();
+    });
+  }
+
 });
 
 
