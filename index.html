@@ -1,51 +1,121 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Personal portfolio </title>
-    </head>
-    <body>
-        <!--header Design -->
-        <header class="header">
-            <a href="#" class="logo">portfolio</a>
-            <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a> 
-            <a href="#service">Services</a> 
-            <a href="#portfolio">Portfolio</a> 
-            <a href="#contact">Contact</a> 
-            </nav>
-        </header>
-        <!--home section Design -->
-           <section class="home " id= "home">
-            <div class="home-content">
-                <h3>Hi, Myself</h3>
-                <h1>Anjela Sapkota</h1>
-                <h3>And I'm an IT student</h3>
-                <p> who is interested in learning about technology and computers. 
-                    I want to build my skills and knowledge so I can have a good career in the IT field.</p>
-                    <div class="social-media"></div>
-                     <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MyPortfolio</div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img
+          src="https://www.fnp.com/images/pr/x/v20210121180547/cute-teddy-bear-and-wish-tree_1.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <h1>Hi, Myself <span>Anjela Sapkota</span></h1>
+        <p>And I'm an IT student.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
+        <button onclick="scrollToSection('about')">Explore My Work</button>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>I'm an IT student with a strong interest in web development, programming, and technology.
-                 I enjoy learning new skills and applying them to real-world projects.</p>
-        </div>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <i
+          ><p>
+            Hi! I'm Anjela Sapkota, an IT student passionate about technology
+            and innovation. I have a strong interest in software development,
+            web design, and cybersecurity. I enjoy learning how different
+            technologies work and how they can be used to create useful and
+            creative digital solutions. I have experience with basic programming
+            and web technologies such as HTML, CSS, and JavaScript, and I enjoy
+            building simple and user-friendly websites. I am always eager to
+            learn new skills, explore modern technologies, and grow in the IT
+            field. My goal is to develop innovative and secure solutions that
+            can make a positive impact in the digital world.
+          </p></i
+        >
+        <button onclick="scrollToSection('contact')">Hire Me</button>
+      </div>
     </section>
-</body>
-</html>
 
-            </div>
-    </body>
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress">
+          <div class="progress-bar html"></div>
+        </div>
+
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar css"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar js"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <h3>
+          <p>
+            If you are confuse? I can Help you solve it. Reach me.......
+            "angela"
+          </p>
+        </h3>
+
+        <form id="contact-form">
+          <div class="input-box">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+
+          <div class="input-box">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="input-box">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Anjela Sapkota. All rights reserved.</p>
+    </footer>
+
+    <script src="port.js"></script>
+  </body>
 </html>
