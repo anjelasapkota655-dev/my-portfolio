@@ -12,17 +12,12 @@ mobileMenu.addEventListener("click", () => {
 });
 
 // Form submission
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop page reload
-
-    alert("Thank you for your message!");
-
-    form.reset(); // clear form
-  });
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+e.preventDefault();
+alert("Thank you! Your message has been sent.");
+this.reset();
 });
+
 
 // Smooth navigation for menu links
 
